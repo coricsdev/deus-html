@@ -1,0 +1,60 @@
+
+/* Import CSS files */
+@import url(./assets/css/_variables.css);
+/* Include Global File */
+@import url(./assets/css/_global.css);
+/* Include Grid File */
+@import url(./assets/css/_grid.css);
+/* Include Header File */
+@import url(./assets/css/_header.css);
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font:normal 900 1rem var(--font-Ari);
+}
+
+/* Banner Area */
+.main-area .banner-area .banner{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.main-area .banner-area .banner-title{
+    font: normal 800 1.5rem/1rem;
+    height: 100%;
+    width: 100%;
+    max-height: 450px;
+    padding-top: 15%;
+    padding-bottom: 6rem;
+}
+/* Categories Section */
+.main-area .categories{
+    padding: 3rem 0;
+}
+.main-area .categories a>span{
+    border: 1px solid var(--light);
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-left: 1.5rem;
+    background: var(--light);
+    box-shadow: var(--box-shadow2);
+    color: var(--gray);
+    transition: all .5s ease;
+}
+
+.main-area .categories a:hover > span,
+.main-area .categories a:focus > span {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--light);
+    box-shadow: none;
+}
