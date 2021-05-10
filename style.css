@@ -50,11 +50,121 @@ body{
     color: var(--gray);
     transition: all .5s ease;
 }
-
 .main-area .categories a:hover > span,
 .main-area .categories a:focus > span {
     background: var(--primary-color);
     border-color: var(--primary-color);
     color: var(--light);
     box-shadow: none;
+}
+/*Post Area Section*/
+.main-area .post-area{
+    margin: 0 10%;
+}
+
+.main-area .post-area .grid{
+    column-count: 2;
+}
+
+.main-area .post-area .article{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    width: auto;
+    display: inline-block;
+}
+
+.main-area article.blog-post{
+    box-shadow: var(--box-shadow3);
+    border: 1px solid var(--border);
+    transition: box-shadow .7s ease;
+}
+
+.main-area article.blog-post:hover{
+    box-shadow: none;
+}
+
+.main-area article.blog-post .post-info{
+    padding: 2rem;
+}
+
+.main-area article.blog-post .post-info .post-title{
+    padding: 1rem 0;
+}
+.main-area article.blog-post .post-info .hr{
+    margin-top: 3rem;
+    background: var(--gray);
+}
+
+/*Sidebar Area Section*/
+aside.sidebar .latest-post .new-post{
+    border-bottom: 1px solid var(--border);
+    padding: 5% 0;
+    max-height: 9rem;
+}
+aside.sidebar .latest-post .new-post .post-image,
+aside.sidebar .latest-post .new-post .post-title{
+    padding: 0 .6rem;
+}
+
+aside.sidebar .latest-post .new-post .post-title{
+    padding:  .2rem;
+}
+
+aside.sidebar .latest-post .new-post .post-image img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+/*Sidebar Search Area Section*/
+aside.sidebar .search-area{
+    padding: 8rem 0;
+}
+
+aside.sidebar .search-area .search .form-group{
+    box-shadow: var(--box-shadow2);
+    width: 285px;
+}
+
+/*Sidebar Popular Area Section*/
+aside.sidebar .popular-tags{
+    padding: 4rem 0;
+}
+
+aside.sidebar .popular-tags .tags a{
+    margin: 1.3rem 0;
+}
+
+aside.sidebar .popular-tags .tags a span{
+    padding: 1rem 2rem;
+    background: var(--light);
+    border-radius: 50px;
+    margin-right: 1rem;
+    color: var(--dark);
+    transition: background .7s ease;
+}
+
+aside.sidebar .popular-tags .tags a:hover span{
+    background: var(--primary-color);
+    border: 1px solid var(--border);
+}
+
+/*Pagination Area Section*/
+
+.main-area .pagination{
+    background: var(--light);
+    margin: 2rem 0;
+    display: inline-block;
+    padding: 1rem .7rem;
+    border-radius: 50px;
+}
+
+.main-area .pagination a span{
+    padding: .6rem 1rem;
+    border-radius: 450px;
+}
+
+.main-area .pagination a:hover span{
+    background: var(--primary-color);
+    color: var(--light);
 }

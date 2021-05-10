@@ -19,9 +19,7 @@
 }
 
 /* Grid System */
-.row div{
-    border: 1px solid black;
-}
+
 
 .row{
     display: flex;
