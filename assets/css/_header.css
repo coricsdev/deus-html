@@ -6,15 +6,17 @@ header.header-area .nav{
 header.header-area .nav .toggle-button{
     margin-left: auto;
     display: none;
-    border: 1px solid var(--light);
+    border: none;
     color: var(--primary-color);
     font-size: 1.5rem;
     height: 100%;
-    width: 9%;
+    width: 15%;
+    padding: .1rem;
     margin-top: 1rem;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     cursor: pointer;
+    background: none;
 }
 header.header-area .nav .toggle-button:hover{
     color: var(--gray);
